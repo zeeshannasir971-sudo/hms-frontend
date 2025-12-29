@@ -3,7 +3,7 @@ import { Badge } from '../ui/Badge';
 import { AuditLog } from '@/types';
 
 interface ActivityCardProps {
-  activity: AuditLog;
+  activity: AuditLog
 }
 
 export const ActivityCard: React.FC<ActivityCardProps> = ({ activity }) => {
