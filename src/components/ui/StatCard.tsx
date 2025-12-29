@@ -1,7 +1,16 @@
 import React from 'react';
 import { LucideIcon } from 'lucide-react';
 
-
+interface StatCardProps {
+  title: string;
+  value: string | number;
+  icon: LucideIcon;
+  iconColor?: string;
+  change?: {
+    value: number;
+    type: 'increase' | 'decrease';
+  };
+}
 
 export const StatCard: React.FC<StatCardProps> = ({ 
   title, 
