@@ -6,6 +6,7 @@ import { Queue } from '@/types';
 interface QueuePatientCardProps {
   queueItem: Queue;
   onStartConsultation: (queueId: string) => void;
+  onCompleteConsultation: (queueId: string) => void;
 
 }
 
