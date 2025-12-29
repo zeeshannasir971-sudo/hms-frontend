@@ -2,9 +2,7 @@ import React from 'react';
 import { Badge } from '../ui/Badge';
 import { Queue } from '@/types';
 
-interface QueueStatusCardProps {
-  queueItem: Queue;
-}
+
 
 export const QueueStatusCard: React.FC<QueueStatusCardProps> = ({ queueItem }) => {
   const getStatusVariant = (status: string) => {
