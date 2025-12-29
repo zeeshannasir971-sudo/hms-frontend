@@ -44,20 +44,7 @@ export const useNotifications = () => {
     }
   };
 
-  const markAsRead = async (notificationId: string) => {
-    try {
-      await notificationsApi.markAsRead(notificationId);
-      setData(prev => ({
-        ...prev,
-        notifications: prev.notifications.map(n => 
-          (n.id || n._id) === notificationId ? { ...n, isRead: true } : n
-        ),
-        unreadCount: Math.max(0, prev.unreadCount - 1)
-      }));
-    } catch (error) {
-      console.error('Error marking notification as read:', error);
-    }
-  };
+  
 
   const markAllAsRead = async () => {
     try {
