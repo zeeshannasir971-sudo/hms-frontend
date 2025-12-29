@@ -1,6 +1,6 @@
 import React from 'react';
 import { Badge } from '../ui/Badge';
-import { AuditLog } from '@/types'
+import { AuditLog } from '@/types';
 
 interface ActivityCardProps {
   activity: AuditLog;
