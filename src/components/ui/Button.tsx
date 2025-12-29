@@ -1,6 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
 
+interface ButtonProps {
+  children: React.ReactNode;
+  variant?: 'primary' | 'secondary' | 'danger' | 'success' | 'warning' | 'info';
+  size?: 'sm' | 'md' | 'lg';
+  className?: string;
+  onClick?: (e?: React.MouseEvent) => void;
+  disabled?: boolean;
+  type?: 'button' | 'submit' | 'reset';
+}
+
 
 export const Button: React.FC<ButtonProps> = ({
   children,
