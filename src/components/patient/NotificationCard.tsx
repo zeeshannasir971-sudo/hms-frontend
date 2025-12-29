@@ -7,24 +7,7 @@ interface NotificationCardProps {
   onMarkAsRead?: (id: string) => void;
 }
 
-export const NotificationCard: React.FC<NotificationCardProps> = ({ 
-  notification, 
-  onMarkAsRead 
-}) => {
-  const getIcon = (type: string) => {
-    switch (type) {
-      case 'appointment':
-        return Calendar;
-      case 'queue':
-        return Clock;
-      case 'alert':
-        return AlertTriangle;
-      case 'reminder':
-        return Bell;
-      default:
-        return Info;
-    }
-  };
+
 
   const getIconColor = (priority: string) => {
     switch (priority) {
