@@ -162,7 +162,7 @@ export default function PatientDashboard() {
         </Card>
 
         {/* Quick Actions */}
-        <QuickActions onDownloadReport={downloadMedicalReport} />
+   
       </div>
     </Layout>
   );
